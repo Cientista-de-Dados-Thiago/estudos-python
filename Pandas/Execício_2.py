@@ -1,4 +1,4 @@
-DataFrame players:
+'''DataFrame players:
 +-------------+--------+
 | Column Name | Type   |
 +-------------+--------+
@@ -39,3 +39,10 @@ Output:
 [10, 5]
 Explanation:
 This DataFrame contains 10 rows and 5 columns.
+Resolução:
+'''
+import pandas as pd
+
+def getDataframeSize(players: pd.DataFrame) -> List[int]:
+    tamanho = list(players.shape)
+    return tamanho

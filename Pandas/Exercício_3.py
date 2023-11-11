@@ -1,3 +1,4 @@
+'''
 DataFrame: employees
 +-------------+--------+
 | Column Name | Type   |
@@ -35,3 +36,11 @@ Output:
 +-------------+---------+-------------+--------+
 Explanation: 
 Only the first 3 rows are displayed.
+
+Resolução:
+'''
+import pandas as pd
+
+def selectFirstRows(employees: pd.DataFrame) -> pd.DataFrame:
+    inicio = employees.head(3)
+    return inicio
